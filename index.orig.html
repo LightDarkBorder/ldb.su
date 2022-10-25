@@ -16,7 +16,27 @@
   <script>let mobileNav = false; function onResize() { const helpOuterBox = document.querySelector("#details"); const mainContent = document.querySelector("#main-content"); const mediaQuery = "(min-width: 240px) and (max-width: 420px) and " + "(min-height: 401px), " + "(max-height: 560px) and (min-height: 240px) and " + "(min-width: 421px)"; const detailsHidden = helpOuterBox.classList.contains("hidden"); const runnerContainer = document.querySelector(".runner-container"); if (mobileNav !== window.matchMedia(mediaQuery).matches) { mobileNav = !mobileNav; if (mobileNav) { mainContent.classList.toggle("hidden", !detailsHidden); helpOuterBox.classList.toggle("hidden", detailsHidden); if (runnerContainer) { runnerContainer.classList.toggle("hidden", !detailsHidden) } } else if (!detailsHidden) { mainContent.classList.remove("hidden"); helpOuterBox.classList.remove("hidden"); if (runnerContainer) { runnerContainer.classList.remove("hidden") } } } } function setupMobileNav() { window.addEventListener("resize", onResize); onResize() } document.addEventListener("DOMContentLoaded", setupMobileNav);
   </script>
   <script>function toggleHelpBox(){const e=document.getElementById("details");e.classList.toggle("hidden");const t=document.getElementById("details-button");if(e.classList.contains("hidden")?(t.innerText="Подробные сведения",t.classList.remove("expanded")):(t.innerText="Скрыть подробные сведения",t.classList.add("expanded")),mobileNav){document.getElementById("main-content").classList.toggle("hidden");const n=document.querySelector(".runner-container");n&&n.classList.toggle("hidden")}}function detailsButtonClick(){window.errorPageController&&errorPageController.detailsButtonClick()}window.top.location==window.location&&!window.portalHost||document.documentElement.setAttribute("subframe","");</script>
-  <script>let isChrome=/Chrome/.test(navigator.userAgent)&&/Google Inc/.test(navigator.vendor)&&!(/Edg/.test(navigator.userAgent)||/EdgA/.test(navigator.userAgent)||/EdgiOS/.test(navigator.userAgent)),isEdge=/Chrome/.test(navigator.userAgent)&&/Google Inc/.test(navigator.vendor)&&(/Edg/.test(navigator.userAgent)||/EdgA/.test(navigator.userAgent)||/EdgiOS/.test(navigator.userAgent));var link;isChrome&&((link=document.createElement("link")).setAttribute("rel","stylesheet"),link.setAttribute("href","css/chrome.css"),document.head.appendChild(link)),isEdge&&((link=document.createElement("link")).setAttribute("rel","stylesheet"),link.setAttribute("href","css/edge.css"),document.head.appendChild(link));</script>
+  <script>
+    let isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor) && !(/Edg/.test(navigator.userAgent) || /EdgA/.test(navigator.userAgent) || /EdgiOS/.test(navigator.userAgent));
+    let isEdge = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor) && (/Edg/.test(navigator.userAgent) || /EdgA/.test(navigator.userAgent) || /EdgiOS/.test(navigator.userAgent));
+
+    if (isChrome) {
+      var link = document.createElement('link');
+      link.setAttribute('rel', 'stylesheet');
+      link.setAttribute('href', 'css/chrome.css');
+      document.head.appendChild(link);
+    } else if (isEdge) {
+      var link = document.createElement('link');
+      link.setAttribute('rel', 'stylesheet');
+      link.setAttribute('href', 'css/edge.css');
+      document.head.appendChild(link);
+    } else {
+      var link = document.createElement('link');
+      link.setAttribute('rel', 'stylesheet');
+      link.setAttribute('href', 'css/edge.css');
+      document.head.appendChild(link);
+    }
+  </script>
   <link rel="stylesheet" href="css/main.css">
 </head>
 
