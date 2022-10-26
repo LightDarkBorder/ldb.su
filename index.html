@@ -1,1 +1,105 @@
-<!DOCTYPE html><html dir="ltr" lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="theme-color" content="#fff"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Досье LightDarkBorder</title><meta property="og:locale" content="ru_RU"><meta property="og:title" content="Досье LightDarkBorder"><meta property="og:description" content="Анкета и все, по мотивам ошибок в Edge"><meta property="og:site_name" content="Time to hack"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Досье LDB"><meta name="description" content="Анкета и все, по мотивам ошибок в Edge"><script>let mobileNav = false; function onResize() { const helpOuterBox = document.querySelector("#details"); const mainContent = document.querySelector("#main-content"); const mediaQuery = "(min-width: 240px) and (max-width: 420px) and " + "(min-height: 401px), " + "(max-height: 560px) and (min-height: 240px) and " + "(min-width: 421px)"; const detailsHidden = helpOuterBox.classList.contains("hidden"); const runnerContainer = document.querySelector(".runner-container"); if (mobileNav !== window.matchMedia(mediaQuery).matches) { mobileNav = !mobileNav; if (mobileNav) { mainContent.classList.toggle("hidden", !detailsHidden); helpOuterBox.classList.toggle("hidden", detailsHidden); if (runnerContainer) { runnerContainer.classList.toggle("hidden", !detailsHidden) } } else if (!detailsHidden) { mainContent.classList.remove("hidden"); helpOuterBox.classList.remove("hidden"); if (runnerContainer) { runnerContainer.classList.remove("hidden") } } } } function setupMobileNav() { window.addEventListener("resize", onResize); onResize() } document.addEventListener("DOMContentLoaded", setupMobileNav);</script><script>function toggleHelpBox(){const e=document.getElementById("details");e.classList.toggle("hidden");const t=document.getElementById("details-button");if(e.classList.contains("hidden")?(t.innerText="Подробные сведения",t.classList.remove("expanded")):(t.innerText="Скрыть подробные сведения",t.classList.add("expanded")),mobileNav){document.getElementById("main-content").classList.toggle("hidden");const n=document.querySelector(".runner-container");n&&n.classList.toggle("hidden")}}function detailsButtonClick(){window.errorPageController&&errorPageController.detailsButtonClick()}window.top.location==window.location&&!window.portalHost||document.documentElement.setAttribute("subframe","");</script><script>let isChrome=/Chrome/.test(navigator.userAgent)&&/Google Inc/.test(navigator.vendor)&&!(/Edg/.test(navigator.userAgent)||/EdgA/.test(navigator.userAgent)||/EdgiOS/.test(navigator.userAgent)),isEdge=/Chrome/.test(navigator.userAgent)&&/Google Inc/.test(navigator.vendor)&&(/Edg/.test(navigator.userAgent)||/EdgA/.test(navigator.userAgent)||/EdgiOS/.test(navigator.userAgent));var link;isChrome?((link=document.createElement("link")).setAttribute("rel","stylesheet"),link.setAttribute("href","css/chrome.css")):(isEdge,(link=document.createElement("link")).setAttribute("rel","stylesheet"),link.setAttribute("href","css/edge.css")),document.head.appendChild(link);</script><link rel="stylesheet" href="css/main.css"></head><body id="t" style="font-family:system-ui,sans-serif;font-size:75%" class="neterror"><div id="main-frame-error" class="interstitial-wrapper"><div id="main-content"><div class="icon icon-blocked"></div><div id="main-message"><h1><span>Досье LightDarkBorder утеряно.</span></h1><p>Страница с соц.сетями.</p><div id="error-information-popup-container"><div id="error-information-popup"><div id="error-information-popup-box"><div id="error-information-popup-content"><div id="suggestions-list"><p>Список:</p><ul><li><a href="https://t.me/LightDarkBorder">Telegram</a></li><li><a href="https://github.com/LightDarkBorder">Github</a></li><li><a href="https://steamcommunity.com/id/lightdarkborder/">Steam</a></li></ul></div><div class="error-code">ERR_FUCK_U</div></div></div></div></div></div></div><div id="buttons" class="nav-wrapper suggested-left"><div id="control-buttons"><button id="reload-button" class="blue-button text-button" onclick="window.location.reload()">Обновить</button></div><div id="details-buttons"><button id="details-button" onclick="detailsButtonClick(),toggleHelpBox()">Подробные сведения</button></div></div><div id="details" class="hidden"><div class="suggestions"><div class="suggestion-header">Почта для связи:</div><div class="suggestion-body">admin@ldb.su</div></div><div class="suggestions"><div class="suggestion-header">Бытие:</div><div class="suggestion-body">Ломаю Вконтакте, черчу чертежи, кайфую.</div></div><div class="suggestions"><div class="suggestion-header">Полезные ссылки:</div><div class="suggestion-body"><li><a href="https://ldb.su/token">Получить токен Вконтакте</a></li><li><a href="https://ldb.su/cuphead">Редактор сохранений Cuphead</a></li></div></div></div></div></body></html>
+<!DOCTYPE html><html dir="ltr" lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="theme-color" content="#fff"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,user-scalable=no"><title>Досье LightDarkBorder</title><meta name="description" content="Анкета и все, по мотивам ошибок в Браузерах."><meta name="author" content="LightDarkBorder"><meta name="keywords" content="Profile,Software,LightDarkBorder"><meta property="og:locale" content="ru_RU"><meta property="og:site_name" content="ldb.su"><meta property="og:title" content="Досье LightDarkBorder"><meta property="og:description" content="Анкета и все, по мотивам ошибок в Браузерах."><meta name="apple-mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Досье LDB"><meta name="theme-color" content="black-translucent"><meta name="mobile-web-app-capable" content="yes"><meta name="msapplication-navbutton-color" content="black-translucent"><meta name="msapplication-TileColor" content="black-translucent"><meta name="application-name" content="Досье LDB"><meta name="msapplication-tooltip" content="Анкета и все, по мотивам ошибок в Браузерах."><script>let mobileNav = false;
+    function onResize() {
+        const helpOuterBox = document.querySelector("#details");
+        const mainContent = document.querySelector("#main-content");
+        const mediaQuery = "(min-width: 240px) and (max-width: 420px) and " + "(min-height: 401px), " + "(max-height: 560px) and (min-height: 240px) and " + "(min-width: 421px)";
+        const detailsHidden = helpOuterBox.classList.contains("hidden");
+        if (mobileNav !== window.matchMedia(mediaQuery).matches) {
+            mobileNav = !mobileNav;
+            if (mobileNav) {
+                mainContent.classList.toggle("hidden", !detailsHidden);
+                helpOuterBox.classList.toggle("hidden", detailsHidden);
+            } else if (!detailsHidden) {
+                mainContent.classList.remove("hidden");
+                helpOuterBox.classList.remove("hidden");
+            }
+        }
+    }
+    function setupMobileNav() {
+        window.addEventListener("resize", onResize);
+        onResize();
+    }
+    document.addEventListener("DOMContentLoaded", setupMobileNav);</script><script>function toggleHelpBox() {
+        const e = document.getElementById("details");
+        e.classList.toggle("hidden");
+        const t = document.getElementById("details-button");
+        if ((e.classList.contains("hidden") ? ((t.innerText = "Подробные сведения"), t.classList.remove("expanded")) : ((t.innerText = "Скрыть подробные сведения"), t.classList.add("expanded")), mobileNav)) {
+            document.getElementById("main-content").classList.toggle("hidden");
+        }
+    }
+    function detailsButtonClick() {
+        window.errorPageController && errorPageController.detailsButtonClick();
+    }</script><script>const ANIMATION_TIMEOUT = 400;
+
+      function diagnoseErrors() {
+        if (window.errorPageController)
+          errorPageController.diagnoseErrorsButtonClick();
+      }
+      function showErrorBox() {
+        if (toggleTimeout)
+          clearTimeout(toggleTimeout);
+
+        var disclosure = document.getElementById('disclosure');
+        var revealButton = document.getElementById('reveal-button');
+
+        if (gostStateString) {
+          var gostState = document.getElementById('gost-error');
+          if (gostState.innerText.length === 0) {
+            gostState.innerText = gostStateString;
+          }
+        }
+
+        document.querySelector('.error_hidden_yes').classList
+            .replace('error_hidden_yes', 'error_hidden_no');
+        revealButton.classList.add('button_hidden_yes');
+        // transition to height auto
+        disclosure.style.height = 'auto';
+        var endHeight = getComputedStyle(disclosure).height;
+        disclosure.style.height = 0;
+        if (!disclosure.classList.contains('no_animate'))
+          disclosure.style.transition = `height ease-in-out ${ANIMATION_TIMEOUT}ms`;
+        getComputedStyle(disclosure).height; // reflow
+        disclosure.style.height = endHeight;
+
+        toggleHelpBox = hideErrorBox;
+      }
+
+      function hideErrorBox() {
+        var disclosure = document.getElementById('disclosure');
+        var revealButton = document.getElementById('reveal-button');
+
+        document.querySelector('.error_hidden_no').classList
+            .replace('error_hidden_no', 'error_hidden_yes');
+
+        toggleTimeout = setTimeout(function() {
+                revealButton.classList.remove('button_hidden_yes');
+                toggleTimeout = null; },
+            ANIMATION_TIMEOUT);
+
+        if (!disclosure.classList.contains('no_animate'))
+          disclosure.style.transition = `height ease-in-out ${ANIMATION_TIMEOUT}ms`;
+        disclosure.style.height = 0;
+
+        toggleHelpBox = showErrorBox;
+      }
+
+      var gostStateString = null;
+      var toggleTimeout = null;
+      var toggleHelpBox = showErrorBox;</script><script>function ContentBrowser() {
+      let isEdge = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor) && (/Edg/.test(navigator.userAgent) || /EdgA/.test(navigator.userAgent) || /EdgiOS/.test(navigator.userAgent));
+      let isYA = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor) && (/YaBrowser/.test(navigator.userAgent) || /Yowser/.test(navigator.userAgent));
+      var link = document.createElement('link');
+      link.setAttribute('rel', 'stylesheet');
+      if (false) {
+        link.setAttribute('href', 'css/edge.css');
+        document.getElementById("main-frame-error").classList.toggle("hidden");
+      } else if (isYA) {
+        link.setAttribute('href', 'css/ya.css');
+        document.getElementById("ya-frame-error").classList.toggle("hidden");
+      } else {
+        link.setAttribute('href', 'css/chrome.css');
+        document.getElementById("main-frame-error").classList.toggle("hidden");
+      }
+      document.head.appendChild(link);
+    }
+    document.addEventListener("DOMContentLoaded", ContentBrowser);</script></head><body style="font-family:system-ui,sans-serif;font-size:75%" class="neterror"><div id="main-frame-error" class="interstitial-wrapper hidden"><div id="main-content"><div class="icon icon-blocked"></div><div id="main-message"><h1><span>Досье LightDarkBorder утеряно.</span></h1><p>Здравствуйте, до свидания! Список соц. сетей для связи со мной (нет).</p><div id="error-information-popup-container"><div id="error-information-popup"><div id="error-information-popup-box"><div id="error-information-popup-content"><div id="suggestions-list"><p>Список:</p><ul><li><a href="https://t.me/LightDarkBorder">Telegram</a></li><li><a href="https://github.com/LightDarkBorder">Github</a></li><li><a href="https://steamcommunity.com/id/lightdarkborder/">Steam</a></li></ul></div><div class="error-code">ERR_CRINGE_PRODACTION</div></div></div></div></div></div></div><div id="buttons" class="nav-wrapper suggested-left"><div id="control-buttons"><button id="social-button" class="blue-button text-button" onclick="location.href=&#34;http://t.me/LightDarkBorder&#34;">Написать</button></div><div id="details-buttons"><button id="details-button" onclick="detailsButtonClick(),toggleHelpBox()">Подробные сведения</button></div></div><div id="details" class="hidden"><div class="suggestions"><div class="suggestion-header">Почта для связи:</div><div class="suggestion-body"><a href="mailto:admin@ldb.su">admin@ldb.su</a></div></div><div class="suggestions"><div class="suggestion-header">Бытие/сознание:</div><div class="suggestion-body">Ломаю Вконтакте, черчу чертежи, кайфую.</div></div><div class="suggestions"><div class="suggestion-header">Полезные ссылки:</div><div class="suggestion-body"><li><a href="https://ldb.su/token">Получить токен Вконтакте</a></li><li><a href="https://ldb.su/cuphead">Редактор сохранений Cuphead</a></li></div></div></div></div><div id="ya-frame-error" class="wrap hidden"><div class="paper"><div class="paper__text-wrap"><div class="paper__title"><div class="paper__title-text">Досье LightDarkBorder утеряно.</div></div><div class="paper__summary"><div class="paper__summary-text">Здравствуйте, до свидания! Список соц. сетей для связи со мной (нет).</div></div></div><div id="suggestions-list"><p>Список:</p><ul><li><a href="https://t.me/LightDarkBorder">Telegram</a></li><li><a href="https://github.com/LightDarkBorder">Github</a></li><li><a href="https://steamcommunity.com/id/lightdarkborder/">Steam</a></li></ul></div><button class="button button_theme_action button_size_m" onclick="location.href=&#34;http://t.me/LightDarkBorder&#34;"><span class="button__text">Написать</span></button><div class="paper__action"><button class="button button_theme_pseudo button_size_xs" id="reveal-button" onclick="showErrorBox()"><span class="button__text">Подробнее</span></button></div><div class="paper__disclosure" id="disclosure"><ul class="paper__suggestions"><li class="paper__suggestion"><span class="paper__suggestion-text">Почта для связи:</span> <span class="paper__suggestion-text"><a href="mailto:admin@ldb.su">admin@ldb.su</a></span></li><li class="paper__suggestion"><span class="paper__suggestion-text">Бытие/сознание:</span> <span class="paper__suggestion-text">Ломаю Вконтакте, черчу чертежи, кайфую.</span></li><li class="paper__suggestion"><span class="paper__suggestion-text">Полезные ссылки:</span> <span class="paper__suggestion-text"><a href="https://ldb.su/token">Получить токен Вконтакте</a>, <a href="https://ldb.su/cuphead">Редактор сохранений Cuphead</a></span></li></ul><div id="error-block" class="error error_hidden_yes"><span class="error__code">ERR_CRINGE_PRODACTION</span></div></div></div></div></body></html>
