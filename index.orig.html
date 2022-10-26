@@ -63,6 +63,7 @@
     function detailsButtonClick() {
         window.errorPageController && errorPageController.detailsButtonClick();
     }
+    window.top.location==window.location&&!window.portalHost||document.documentElement.setAttribute("subframe","");
   </script>
   <script>
       const ANIMATION_TIMEOUT = 400;
@@ -97,7 +98,6 @@
         getComputedStyle(disclosure).height; // reflow
         disclosure.style.height = endHeight;
 
-        toggleHelpBox = hideErrorBox;
       }
 
       function hideErrorBox() {
@@ -116,12 +116,10 @@
           disclosure.style.transition = `height ease-in-out ${ANIMATION_TIMEOUT}ms`;
         disclosure.style.height = 0;
 
-        toggleHelpBox = showErrorBox;
       }
 
       var gostStateString = null;
       var toggleTimeout = null;
-      var toggleHelpBox = showErrorBox;
   </script>
   <script>
     function ContentBrowser() {
