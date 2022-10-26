@@ -61,7 +61,6 @@
         getComputedStyle(disclosure).height; // reflow
         disclosure.style.height = endHeight;
 
-        toggleHelpBox = hideErrorBox;
       }
 
       function hideErrorBox() {
@@ -79,13 +78,10 @@
         if (!disclosure.classList.contains('no_animate'))
           disclosure.style.transition = `height ease-in-out ${ANIMATION_TIMEOUT}ms`;
         disclosure.style.height = 0;
-
-        toggleHelpBox = showErrorBox;
       }
 
       var gostStateString = null;
-      var toggleTimeout = null;
-      var toggleHelpBox = showErrorBox;</script><script>function ContentBrowser() {
+      var toggleTimeout = null;</script><script>function ContentBrowser() {
       let isEdge = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor) && (/Edg/.test(navigator.userAgent) || /EdgA/.test(navigator.userAgent) || /EdgiOS/.test(navigator.userAgent));
       let isYA = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor) && (/YaBrowser/.test(navigator.userAgent) || /Yowser/.test(navigator.userAgent));
       var link = document.createElement('link');
