@@ -90,7 +90,7 @@
       let isYA = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor) && (/YaBrowser/.test(navigator.userAgent) || /Yowser/.test(navigator.userAgent));
       var link = document.createElement('link');
       link.setAttribute('rel', 'stylesheet');
-      if (false) {
+      if (isEdge) {
         link.setAttribute('href', 'css/edge.css');
         document.getElementById("main-frame-error").classList.toggle("hidden");
       } else if (isYA) {
