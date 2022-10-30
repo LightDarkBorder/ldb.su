@@ -1,5 +1,7 @@
 a {
-    color: var(--link-color);
+    color: var(--edge-text-blue-rest);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
 }
 
 body {
@@ -58,15 +60,7 @@ body {
     background: var(--edge-background);
     color: var(--edge-primary-text-color);
     word-wrap: break-word;
-}
-
-.nav-wrapper .secondary-button {
-    background: var(--secondary-button-fill-color);
-    border: 1px solid var(--secondary-button-border-color);
-    color: var(--secondary-button-text-color);
-    float: none;
-    margin: 0;
-    padding: 8px 16px;
+    background-color: var(--edge-grey-background);
 }
 
 .hidden {
@@ -74,7 +68,6 @@ body {
 }
 
 html {
-    -webkit-text-size-adjust: 100%;
     font-size: 125%;
 }
 
@@ -88,40 +81,48 @@ html {
 
 @media (prefers-color-scheme: dark) {
     body {
-    --background-color: var(--google-gray-900);
-    --error-code-color: var(--google-gray-500);
-    --heading-color: var(--google-gray-500);
-    --link-color: var(--google-blue-300);
-    --primary-button-fill-color-active: rgb(129, 162, 208);
-    --primary-button-fill-color: var(--google-blue-300);
-    --primary-button-text-color: var(--google-gray-900);
-    --quiet-background-color: var(--background-color);
-    --secondary-button-border-color: var(--google-gray-700);
-    --secondary-button-fill-color: var(--google-gray-900);
-    --secondary-button-hover-fill-color: rgb(48, 51, 57);
-    --secondary-button-text-color: var(--google-blue-300);
-    --small-link-color: var(--google-blue-300);
-    --text-color: var(--google-gray-500);
-    --edge-black: #FFFFFF;
-    --edge-focus-color: #888;
-    --edge-blue-hover: #0070C6;
-    --edge-blue-pressed: #0069B9;
-    --edge-blue-rest: #0078D4;
-    --edge-blue-selected: #63ACE5;
-    --edge-border-hover: #909090;
-    --edge-border-pressed: #787878;
-    --edge-border-rest: #575757;
-    --edge-grey-background: #2D2D2D;
-    --edge-grey-selected: #676767;
-    --edge-light-grey-hover: #424242;
-    --edge-light-grey-pressed: #3E3E3E;
-    --edge-light-grey-rest: #464646;
-    --edge-text-blue-hover: #429BDF;
-    --edge-text-blue-rest: #63ACE5;
-    --edge-text-blue-pressed: #2189DA;
-    --edge-text-grey-rest: #949494;
-    --edge-white: #1D1D1D;
-    --edge-primary-button-focus-shadow: 0 0 0 2px inset #F2F8FD;
+        --background-color: var(--google-gray-900);
+        --error-code-color: var(--google-gray-500);
+        --heading-color: var(--google-gray-500);
+        --link-color: var(--google-blue-300);
+        --primary-button-fill-color-active: rgb(129, 162, 208);
+        --primary-button-fill-color: var(--google-blue-300);
+        --primary-button-text-color: var(--google-gray-900);
+        --quiet-background-color: var(--background-color);
+        --secondary-button-border-color: var(--google-gray-700);
+        --secondary-button-fill-color: var(--google-gray-900);
+        --secondary-button-hover-fill-color: rgb(48, 51, 57);
+        --secondary-button-text-color: var(--google-blue-300);
+        --small-link-color: var(--google-blue-300);
+        --text-color: var(--google-gray-500);
+        --edge-black: #FFFFFF;
+        --edge-focus-color: #888;
+        --edge-blue-hover: #0070C6;
+        --edge-blue-pressed: #0069B9;
+        --edge-blue-rest: #0078D4;
+        --edge-blue-selected: #63ACE5;
+        --edge-border-hover: #909090;
+        --edge-border-pressed: #787878;
+        --edge-border-rest: #575757;
+        --edge-grey-background: #2D2D2D;
+        --edge-grey-selected: #676767;
+        --edge-light-grey-hover: #424242;
+        --edge-light-grey-pressed: #3E3E3E;
+        --edge-light-grey-rest: #464646;
+        --edge-text-blue-hover: #429BDF;
+        --edge-text-blue-rest: #63ACE5;
+        --edge-text-blue-pressed: #2189DA;
+        --edge-text-grey-rest: #949494;
+        --edge-white: #1D1D1D;
+        --edge-primary-button-focus-shadow: 0 0 0 2px inset #F2F8FD;
+    }
+
+    .icon {
+        filter: invert(1);
+    }
+
+    #details-button:before {
+        filter: invert(1);
     }
 }
 
@@ -136,7 +137,7 @@ button {
     margin: 0;
     padding: 8px 16px;
     transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1);
-    user-select: none;
+    -webkit-user-select: none;
 }
 
 [dir='rtl'] button {
@@ -176,18 +177,24 @@ h1 {
     font-size: 1.6em;
     font-weight: bold;
     line-height: 1.25em;
-    margin-bottom: 16px;
+    margin-top: 0;
+    word-wrap: break-word;
+    margin-bottom: 22px;
 }
 
 h2 {
+    color: var(--edge-secondary-text-color);
     font-size: 1.2em;
     font-weight: normal;
+    margin: 10px 0;
 }
 
 .icon {
     height: 72px;
     margin: 0 0 40px;
     width: 72px;
+    -webkit-user-select: none;
+    display: inline-block;
 }
 
 .interstitial-wrapper {
@@ -197,14 +204,6 @@ h2 {
     margin: 14vh auto 0;
     max-width: 600px;
     width: 100%;
-}
-
-#main-message > p {
-    display: inline;
-}
-
-.nav-wrapper {
-    margin-top: 51px;
 }
 
 .nav-wrapper::after {
@@ -384,7 +383,6 @@ h2 {
     }
 }
 
-/* Small mobile screens. No fixed nav. */
 @media (max-height: 400px) and (orientation: portrait),
 (max-height: 239px) and (orientation: landscape),
 (max-width: 419px) and (max-height: 399px) {
@@ -421,39 +419,15 @@ h2 {
 
 @media (max-width: 239px) and (orientation: portrait) {
     .nav-wrapper {
-    padding-inline-end: 0;
-    padding-inline-start: 0;
+        padding-inline-end: 0;
+        padding-inline-start: 0;
     }
-}
-
-body {
-    background-color: var(--edge-grey-background);
-}
-
-h1 {
-    margin-top: 0;
-    word-wrap: break-word;
-    color: var(--edge-primary-text-color);
-    margin-bottom: 22px;
 }
 
 h1 span {
     font-weight: bold;
     font-size: 24px;
     line-height: 32px;
-}
-
-h2 {
-    color: var(--edge-secondary-text-color);
-    font-size: 1.2em;
-    font-weight: normal;
-    margin: 10px 0;
-}
-
-a {
-    color: var(--edge-text-blue-rest);
-    text-decoration: none;
-    border-bottom: 1px solid currentColor;
 }
 
 a:hover {
@@ -468,13 +442,48 @@ a:focus {
 
 @media (forced-colors: active) {
     a:hover {
-    color: HightlightText;
+        color: HightlightText;
     }
-}
 
-.icon {
-    -webkit-user-select: none;
-    display: inline-block;
+    #details-button {
+        -ms-high-contrast-adjust: none;
+        color: ButtonText;
+        background-color: ButtonFace;
+    }
+
+    #details-button::before {
+        fill: ButtonText;
+    }
+
+    #details-button:focus {
+        outline: 2px solid ButtonText;
+    }
+
+    #details-button:hover{
+        background-color: Highlight;
+        color: HighlightText;
+    }
+
+    #details-button:hover::before{
+        fill: HighlightText;
+    }
+
+    #social-button {
+        -ms-high-contrast-adjust: none;
+        background-color: Highlight;
+        color: HighlightText;
+    }
+    
+    #social-button:hover {
+        background-color: HighlightText;
+        color: Highlight;
+        border: 2px solid Highlight;
+    }
+    
+    #social-button:focus {
+        outline: 2px solid ButtonText;
+        box-shadow: none;
+    }
 }
 
 .icon-blocked {
@@ -539,7 +548,6 @@ a:focus {
     margin-bottom: 4px;
 }
 
-/* Decrease padding at low sizes. */
 @media (max-width: 640px),
 (max-height: 640px) {
     h1 {
@@ -560,7 +568,6 @@ a:focus {
     margin-bottom: 44px;
 }
 
-/* details-button is special; it's a <button> element that looks like a link. */
 #details-buttons {
     width: 100%;
 }
@@ -600,32 +607,6 @@ a:focus {
     outline: solid 2px var(--edge-focus-color);
 }
 
-@media (forced-colors: active) {
-
-    #details-button {
-    -ms-high-contrast-adjust: none;
-    color: ButtonText;
-    background-color: ButtonFace;
-    }
-
-    #details-button::before {
-    fill: ButtonText;
-    }
-
-    #details-button:focus {
-    outline: 2px solid ButtonText;
-    }
-
-    #details-button:hover{
-    background-color: Highlight;
-    color: HighlightText;
-    }
-
-    #details-button:hover::before{
-    fill: HighlightText;
-    }
-}
-
 .nav-wrapper {
     margin-top: 44px;
 }
@@ -663,76 +644,47 @@ a:focus {
     background-color: var(--edge-blue-pressed);
 }
 
-@media (forced-colors: active) {
-    #social-button {
-    -ms-high-contrast-adjust: none;
-    background-color: Highlight;
-    color: HighlightText;
-    }
-
-    #social-button:hover {
-    background-color: HighlightText;
-    color: Highlight;
-    border: 2px solid Highlight;
-    }
-
-    #social-button:focus {
-    outline: 2px solid ButtonText;
-    box-shadow: none;
-    }
-}
-
-#main-message>p {
+#main-message > p {
     font-size: 14px;
     line-height: 20px;
     color: var(--edge-primary-text-color);
+    display: inline;
 }
 
 @media (max-height: 350px) {
     h1 {
-    margin: 0 0 15px;
+        margin: 0 0 15px;
     }
 
     .interstitial-wrapper {
-    margin-top: 5%;
+        margin-top: 5%;
     }
 
     .nav-wrapper {
-    margin-top: 30px;
+        margin-top: 30px;
     }
 }
 
 @media (min-width: 420px) and (max-width: 736px) and (min-height: 240px) and (max-height: 420px) and (orientation:landscape) {
     .interstitial-wrapper {
-    margin-bottom: 100px;
+        margin-bottom: 100px;
     }
 }
 
 @media (max-width: 240px) {
     button {
-    padding-left: 12px;
-    padding-right: 12px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     .interstitial-wrapper {
-    overflow: inherit;
-    padding: 0 8px;
+        overflow: inherit;
+        padding: 0 8px;
     }
 }
 
 @media (max-width: 120px) {
     button {
-    width: auto;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-
-    .icon {
-    filter: invert(1);
-    }
-
-    #details-button:before {
-    filter: invert(1);
+        width: auto;
     }
 }

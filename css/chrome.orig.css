@@ -1,76 +1,40 @@
 a {
-    color: var(--link-color);
+  color: var(--link-color);
+  text-decoration: none;
 }
 
 body {
-    --background-color: #fff;
-    --error-code-color: var(--google-gray-700);
-    --google-blue-100: rgb(210, 227, 252);
-    --google-blue-300: rgb(138, 180, 248);
-    --google-blue-600: rgb(26, 115, 232);
-    --google-blue-700: rgb(25, 103, 210);
-    --google-gray-100: rgb(241, 243, 244);
-    --google-gray-300: rgb(218, 220, 224);
-    --google-gray-500: rgb(154, 160, 166);
-    --google-gray-50: rgb(248, 249, 250);
-    --google-gray-600: rgb(128, 134, 139);
-    --google-gray-700: rgb(95, 99, 104);
-    --google-gray-800: rgb(60, 64, 67);
-    --google-gray-900: rgb(32, 33, 36);
-    --heading-color: var(--google-gray-900);
-    --link-color: rgb(88, 88, 88);
-    --popup-container-background-color: rgba(0, 0, 0, .65);
-    --primary-button-fill-color-active: var(--google-blue-700);
-    --primary-button-fill-color: var(--google-blue-600);
-    --primary-button-text-color: #fff;
-    --quiet-background-color: rgb(247, 247, 247);
-    --secondary-button-border-color: var(--google-gray-500);
-    --secondary-button-fill-color: #fff;
-    --secondary-button-hover-border-color: var(--google-gray-600);
-    --secondary-button-hover-fill-color: var(--google-gray-50);
-    --secondary-button-text-color: var(--google-gray-700);
-    --small-link-color: var(--google-gray-700);
-    --text-color: var(--google-gray-700);
-    --edge-background: var(--edge-grey-background);
-    --edge-black: #101010;
-    --edge-focus-color: #838383;
-    --edge-blue-hover: #0078D4;
-    --edge-blue-pressed: #1081D7;
-    --edge-blue-rest: #0070C6;
-    --edge-blue-selected: #004274;
-    --edge-border-hover: #949494;
-    --edge-border-pressed: #ADADAD;
-    --edge-border-rest: #C5C5C5;
-    --edge-grey-background: #F6F6F6;
-    --edge-grey-selected: #C6C6C6;
-    --edge-light-grey-hover: #F3F3F3;
-    --edge-light-grey-pressed: #F7F7F7;
-    --edge-light-grey-rest: #EFEFEF;
-    --edge-primary-text-color: var(--edge-black);
-    --edge-secondary-text-color: var(--edge-text-grey-rest);
-    --edge-text-blue-hover: #0070C6;
-    --edge-text-blue-rest: #0061AB;
-    --edge-text-blue-pressed: #1081D7;
-    --edge-text-grey-rest: #6F6F6F;
-    --edge-white: #FFFFFF;
-    --edge-primary-button-focus-shadow: 0 0 0 2px inset #F2F8FD;
-    --edge-focus-outline: 2px solid var(--edge-focus-color);
-    background: var(--edge-background);
-    color: var(--edge-primary-text-color);
-    word-wrap: break-word;
-}
-
-.nav-wrapper .secondary-button {
-    background: var(--secondary-button-fill-color);
-    border: 1px solid var(--secondary-button-border-color);
-    color: var(--secondary-button-text-color);
-    float: none;
-    margin: 0;
-    padding: 8px 16px;
-}
-
-.hidden {
-    display: none;
+  --background-color: #fff;
+  --error-code-color: var(--google-gray-700);
+  --google-blue-100: rgb(210, 227, 252);
+  --google-blue-300: rgb(138, 180, 248);
+  --google-blue-600: rgb(26, 115, 232);
+  --google-blue-700: rgb(25, 103, 210);
+  --google-gray-100: rgb(241, 243, 244);
+  --google-gray-300: rgb(218, 220, 224);
+  --google-gray-500: rgb(154, 160, 166);
+  --google-gray-50: rgb(248, 249, 250);
+  --google-gray-600: rgb(128, 134, 139);
+  --google-gray-700: rgb(95, 99, 104);
+  --google-gray-800: rgb(60, 64, 67);
+  --google-gray-900: rgb(32, 33, 36);
+  --heading-color: var(--google-gray-900);
+  --link-color: rgb(88, 88, 88);
+  --popup-container-background-color: rgba(0,0,0,.65);
+  --primary-button-fill-color-active: var(--google-blue-700);
+  --primary-button-fill-color: var(--google-blue-600);
+  --primary-button-text-color: #fff;
+  --quiet-background-color: rgb(247, 247, 247);
+  --secondary-button-border-color: var(--google-gray-500);
+  --secondary-button-fill-color: #fff;
+  --secondary-button-hover-border-color: var(--google-gray-600);
+  --secondary-button-hover-fill-color: var(--google-gray-50);
+  --secondary-button-text-color: var(--google-gray-700);
+  --small-link-color: var(--google-gray-700);
+  --text-color: var(--google-gray-700);
+  background: var(--background-color);
+  color: var(--text-color);
+  word-wrap: break-word;
 }
 
 html {
@@ -87,7 +51,7 @@ html {
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
+  body {
     --background-color: var(--google-gray-900);
     --error-code-color: var(--google-gray-500);
     --heading-color: var(--google-gray-500);
@@ -102,27 +66,7 @@ html {
     --secondary-button-text-color: var(--google-blue-300);
     --small-link-color: var(--google-blue-300);
     --text-color: var(--google-gray-500);
-    --edge-black: #FFFFFF;
-    --edge-focus-color: #888;
-    --edge-blue-hover: #0070C6;
-    --edge-blue-pressed: #0069B9;
-    --edge-blue-rest: #0078D4;
-    --edge-blue-selected: #63ACE5;
-    --edge-border-hover: #909090;
-    --edge-border-pressed: #787878;
-    --edge-border-rest: #575757;
-    --edge-grey-background: #2D2D2D;
-    --edge-grey-selected: #676767;
-    --edge-light-grey-hover: #424242;
-    --edge-light-grey-pressed: #3E3E3E;
-    --edge-light-grey-rest: #464646;
-    --edge-text-blue-hover: #429BDF;
-    --edge-text-blue-rest: #63ACE5;
-    --edge-text-blue-pressed: #2189DA;
-    --edge-text-grey-rest: #949494;
-    --edge-white: #1D1D1D;
-    --edge-primary-button-focus-shadow: 0 0 0 2px inset #F2F8FD;
-    }
+  }
 }
 
 button {
@@ -156,10 +100,6 @@ button:active {
     margin: 0 0 50px;
 }
 
-#details p:not(:first-of-type) {
-    margin-top: 20px;
-}
-
 .error-code {
     color: var(--error-code-color);
     font-size: .8em;
@@ -173,6 +113,8 @@ h1 {
     font-weight: normal;
     line-height: 1.25em;
     margin-bottom: 16px;
+    margin-top: 0;
+    word-wrap: break-word;
 }
    
 h2 {
@@ -420,18 +362,9 @@ h2 {
       padding-inline-start: 0;
     }
 }
-
-h1 {
-    margin-top: 0;
-    word-wrap: break-word;
-}
    
 h1 span {
     font-weight: 500;
-}
-   
-a {
-    text-decoration: none;
 }
 
 .icon {
